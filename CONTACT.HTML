@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Naman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f9f6f2;
+      color: #333;
+    }
+
+    .contact-section {
+      padding: 60px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 42px;
+      color: #d47c6b;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .contact-section p.description {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input,
+    textarea {
+      padding: 12px 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #d47c6b;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      background-color: #d47c6b;
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #c06c5d;
+    }
+
+    .contact-section .email-note {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .contact-section h2 {
+        font-size: 32px;
+      }
+
+      input,
+      textarea,
+      button {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="contact-section">
+    <h2>LET'S CONNECT</h2>
+    <p class="description">
+      Got a project in mind or just want to say hi?<br> Fill out the form below and let’s chat!
+    </p>
+
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p class="email-note">
+      Or reach me directly at <strong>namanpratapsingh539@gmail.com</strong>
+    </p>
+  </section>
+
+</body>
+</html>
